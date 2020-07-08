@@ -6,12 +6,14 @@ public class Player : MonoBehaviour
 {
     // Player Properties
     [SerializeField]
-    private float _horizontalSpeed = 5.0f;
-    [SerializeField]
-    private float _verticalSpeed = 5.0f;        
+    private float _speed = 5.0f;     
+
+    //Rigidbody     
+    private Rigidbody2D _myRigidbody;    
         
     private void Start() {
-        transform.position = new Vector3(-6.68f, -3.56f, 0);
+        transform.position = new Vector2(-6.68f, -3.56f);
+        
     }
 
     private void Update() {
@@ -19,19 +21,11 @@ public class Player : MonoBehaviour
     }
 
     // Player Function
-    private void Movement() {
+    private void Movement() {        
+        float h = _speed * Input.GetAxis("Horizontal") * Time.deltaTime;
+               
+        transform.Translate(h, 0, 0);       
         
-        float h = _horizontalSpeed * Input.GetAxis("Horizontal") * Time.deltaTime;
-        // float v = _verticalSpeed * Input.GetAxis("Vertical") * Time.deltaTime;        
-
-        transform.Translate(h, 0, 0);
-
-        // // Screen Vertical Limit
-        // if (transform.position.y > 0) {
-        //     transform.position = new Vector3(transform.position.x, 0, transform.position.z);
-        // } else if (transform.position.y < -4.2f) {
-        //     transform.position = new Vector3(transform.position.x, -4.2f, transform.position.z);
-        // }
         // Screen Horizontal Limit
         if (transform.position.x > 9.4f) {
             transform.position = new Vector3(-9.4f, transform.position.y, transform.position.z);

@@ -7,7 +7,11 @@ public class CameraMovement : MonoBehaviour
 
     public Transform target;
     [SerializeField]
-    private float smoothing = 0.6f;
+    private float _smoothing = 0.6f;
+    [SerializeField]
+    private Vector2 _maxPosition;
+    [SerializeField]
+    private Vector2 _minPosition;
 
     void Start() {
         
@@ -21,10 +25,21 @@ public class CameraMovement : MonoBehaviour
                 transform.position.z
             );
 
+            targetPosition.x = Mathf.Clamp(
+                targetPosition.x,
+                _minPosition.x,
+                _maxPosition.x
+            );
+            targetPosition.y = Mathf.Clamp(
+                targetPosition.y,
+                _minPosition.y,
+                _maxPosition.y
+            );
+
             transform.position = Vector3.Lerp(
                 transform.position, 
                 targetPosition,
-                smoothing
+                _smoothing
             );
         }
     }

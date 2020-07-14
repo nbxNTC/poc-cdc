@@ -36,33 +36,35 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Prefabs\AllSkyFree\AllSkyFree_Menu.cs" />
+     <Compile Include="Assets\Packages\AllSkyFree\AllSkyFree_Menu.cs" />
+     <Compile Include="Assets\_Scripts\CameraMovement.cs" />
      <Compile Include="Assets\_Scripts\MainMenu.cs" />
      <Compile Include="Assets\_Scripts\PauseMenu.cs" />
      <Compile Include="Assets\_Scripts\Player.cs" />
      <Compile Include="Assets\_Scripts\SettingsMenu.cs" />
      <Compile Include="Assets\_Scripts\UIManager.cs" />
-     <None Include="Assets\Prefabs\character-pack-3\Astrologer\TXT\readme.txt" />
-     <None Include="Assets\Prefabs\character-pack-1\Herbalist\TXT\license.txt" />
-     <None Include="Assets\Prefabs\character-pack-3\Artist\TXT\readme.txt" />
-     <None Include="Assets\Prefabs\character-pack-1\Herbalist\TXT\readme.txt" />
-     <None Include="Assets\Prefabs\character-pack-3\Citizen\TXT\license.txt" />
-     <None Include="Assets\Prefabs\character-pack-1\Hunter\TXT\license.txt" />
-     <None Include="Assets\Prefabs\AllSkyFree\AllSkyFree_Readme.txt" />
-     <None Include="Assets\Prefabs\buildings-and-furniture\readme.txt" />
-     <None Include="Assets\Prefabs\character-pack-3\Artist\TXT\license.txt" />
-     <None Include="Assets\Prefabs\character-pack-1\Blacksmith\TXT\readme.txt" />
-     <None Include="Assets\Prefabs\character-pack-2\TXT\readme.txt" />
-     <None Include="Assets\Prefabs\character-pack-1\Jeweler\TXT\license.txt" />
-     <None Include="Assets\Prefabs\crystals-game-items\TXT\readme.txt" />
-     <None Include="Assets\Prefabs\character-pack-1\Jeweler\TXT\readme.txt" />
-     <None Include="Assets\Prefabs\character-pack-3\Citizen\TXT\readme.txt" />
-     <None Include="Assets\Prefabs\character-pack-1\Blacksmith\TXT\license.txt" />
-     <None Include="Assets\Prefabs\character-pack-1\Hunter\TXT\readme.txt" />
-     <None Include="Assets\Prefabs\crystals-game-items\TXT\license.txt" />
-     <None Include="Assets\Prefabs\character-pack-2\TXT\license.txt" />
-     <None Include="Assets\Prefabs\buildings-and-furniture\License.txt" />
-     <None Include="Assets\Prefabs\character-pack-3\Astrologer\TXT\license.txt" />
+     <None Include="Assets\Packages\character-pack-3\Astrologer\TXT\readme.txt" />
+     <None Include="Assets\Packages\character-pack-1\Herbalist\TXT\license.txt" />
+     <None Include="Assets\Packages\character-pack-3\Artist\TXT\readme.txt" />
+     <None Include="Assets\Packages\character-pack-1\Herbalist\TXT\readme.txt" />
+     <None Include="Assets\Packages\character-pack-3\Citizen\TXT\license.txt" />
+     <None Include="Assets\Packages\houses-pack\public-license.txt" />
+     <None Include="Assets\Packages\character-pack-1\Hunter\TXT\license.txt" />
+     <None Include="Assets\Packages\AllSkyFree\AllSkyFree_Readme.txt" />
+     <None Include="Assets\Packages\buildings-and-furniture\readme.txt" />
+     <None Include="Assets\Packages\character-pack-3\Artist\TXT\license.txt" />
+     <None Include="Assets\Packages\character-pack-1\Blacksmith\TXT\readme.txt" />
+     <None Include="Assets\Packages\character-pack-2\TXT\readme.txt" />
+     <None Include="Assets\Packages\character-pack-1\Jeweler\TXT\license.txt" />
+     <None Include="Assets\Packages\crystals-game-items\TXT\readme.txt" />
+     <None Include="Assets\Packages\character-pack-1\Jeweler\TXT\readme.txt" />
+     <None Include="Assets\Packages\character-pack-3\Citizen\TXT\readme.txt" />
+     <None Include="Assets\Packages\character-pack-1\Blacksmith\TXT\license.txt" />
+     <None Include="Assets\Packages\character-pack-1\Hunter\TXT\readme.txt" />
+     <None Include="Assets\Packages\crystals-game-items\TXT\license.txt" />
+     <None Include="Assets\Packages\character-pack-2\TXT\license.txt" />
+     <None Include="Assets\Packages\buildings-and-furniture\License.txt" />
+     <None Include="Assets\Packages\character-pack-3\Astrologer\TXT\license.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

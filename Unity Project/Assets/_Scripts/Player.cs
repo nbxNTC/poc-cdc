@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     // Player Properties
     [SerializeField]
-    private float _speed = 5.0f;     
+    private float _speed = 30.0f;     
 
     // Player Animations
     private Animator _animator;
@@ -17,8 +17,7 @@ public class Player : MonoBehaviour
         
     private void Start() {
         _animator = GetComponent<Animator>();
-        _myRigidbody = GetComponent<Rigidbody2D>();
-        _myRigidbody.MovePosition(Vector3.zero);           
+        _myRigidbody = GetComponent<Rigidbody2D>();                  
     }
 
     private void Update() {
@@ -37,7 +36,7 @@ public class Player : MonoBehaviour
                 transform.position + _movementInput * _speed * Time.deltaTime
             );
             
-            _animator.SetFloat("moveX", _movementInput.x);
+            _animator.SetFloat("moveX", _movementInput.x);  
             _animator.SetFloat("moveY", _movementInput.y);
             _animator.SetBool("moving", true);
         } else {

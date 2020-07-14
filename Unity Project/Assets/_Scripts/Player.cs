@@ -8,12 +8,17 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float _speed = 5.0f;     
 
-    //Rigidbody     
-    private Rigidbody2D _myRigidbody;    
+    // Player Animations
+    private Animator _animator;
+
+    // Rigidbody     
+    private Rigidbody2D _myRigidbody;   
+    private Vector3 _movementInput;         
         
     private void Start() {
-        transform.position = new Vector2(-6.68f, -3.56f);
-        
+        _animator = GetComponent<Animator>();
+        _myRigidbody = GetComponent<Rigidbody2D>();
+        _myRigidbody.MovePosition(Vector3.zero);           
     }
 
     private void Update() {
@@ -21,16 +26,22 @@ public class Player : MonoBehaviour
     }
 
     // Player Function
-    private void Movement() {        
-        float h = _speed * Input.GetAxis("Horizontal") * Time.deltaTime;
-               
-        transform.Translate(h, 0, 0);       
+    private void Movement() {   
+        _movementInput = Vector3.zero;   
+
+        _movementInput.x = Input.GetAxisRaw("Horizontal");
+        _movementInput.y = Input.GetAxisRaw("Vertical");
         
-        // Screen Horizontal Limit
-        if (transform.position.x > 9.4f) {
-            transform.position = new Vector3(-9.4f, transform.position.y, transform.position.z);
-        } else if (transform.position.x < -9.4f) {
-            transform.position = new Vector3(9.4f, transform.position.y, transform.position.z);
+        if (_movementInput != Vector3.zero) {
+            _myRigidbody.MovePosition(
+                transform.position + _movementInput * _speed * Time.deltaTime
+            );
+            
+            _animator.SetFloat("moveX", _movementInput.x);
+            _animator.SetFloat("moveY", _movementInput.y);
+            _animator.SetBool("moving", true);
+        } else {
+            _animator.SetBool("moving", false);
         }
     }    
     

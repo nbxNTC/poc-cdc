@@ -25,16 +25,16 @@ public class CameraMovement : MonoBehaviour
                 transform.position.z
             );
 
-            targetPosition.x = Mathf.Clamp(
-                targetPosition.x,
-                _minPosition.x,
-                _maxPosition.x
-            );
-            targetPosition.y = Mathf.Clamp(
-                targetPosition.y,
-                _minPosition.y,
-                _maxPosition.y
-            );
+            // targetPosition.x = Mathf.Clamp(
+            //     targetPosition.x,
+            //     _minPosition.x,
+            //     _maxPosition.x
+            // );
+            // targetPosition.y = Mathf.Clamp(
+            //     targetPosition.y,
+            //     _minPosition.y,
+            //     _maxPosition.y
+            // );
 
             transform.position = Vector3.Lerp(
                 transform.position, 

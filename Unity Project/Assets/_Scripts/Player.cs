@@ -9,8 +9,8 @@ public class Player : MonoBehaviour
     public Entity entity;
 
     [Header("Player Regen System")]
-    public bool regenHPEnabled = false;
-    public float regenHPTime = 5f;
+    private bool regenHPEnabled = false;
+    private float regenHPTime = 5f;
 
     [Header("Player UI")]
     public Image health1;
@@ -39,15 +39,7 @@ public class Player : MonoBehaviour
 
         if (entity.currentHealth <= 0) Die();
 
-        HealthUI();
-        Teste();
-    }
-
-    private void Teste() {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            entity.currentHealth--;
-            GainExp(10);
-        }
+        HealthUI();    
     }
 
     private void HealthUI() {
@@ -89,6 +81,8 @@ public class Player : MonoBehaviour
         entity.dead = true;
         entity.currentHealth = 0;
         entity.target = null;
+        Destroy(this.gameObject);
+
         StopAllCoroutines();
     }
 

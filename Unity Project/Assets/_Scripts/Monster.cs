@@ -11,6 +11,9 @@ public class Monster : MonoBehaviour
     [Header("UI")]
     public Slider healthSlider;
 
+    [Header("Monster Regen System")]
+    private float regenHPTime = 0.1f;
+
     [Header("Exp")]
     private int expFeed = 100;
 
@@ -25,7 +28,7 @@ public class Monster : MonoBehaviour
         entity.damage = 20;
 
         healthSlider.value = entity.currentHealth;
-
+        
         StartCoroutine(RegenHealth());
     }
 
@@ -35,21 +38,13 @@ public class Monster : MonoBehaviour
         if (entity.currentHealth <= 0) Die();
 
         healthSlider.value = entity.currentHealth;
-
-        Teste();
-    }
-
-    private void Teste() {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            entity.currentHealth--;
-        }
     }
 
     IEnumerator RegenHealth() {
         while(true) {
             if (entity.currentHealth < entity.maxHealth) {
                 entity.currentHealth++;
-                yield return new WaitForSeconds(2f);
+                yield return new WaitForSeconds(regenHPTime);
             } else {
                 yield return null;
             }

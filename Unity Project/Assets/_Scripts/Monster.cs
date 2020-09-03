@@ -25,7 +25,8 @@ public class Monster : MonoBehaviour
         entity.currentHealth = entity.maxHealth;
         entity.currentMana = entity.maxMana;
 
-        entity.damage = 20;
+        entity.damage = 1;
+        entity.canAttack = true;
 
         healthSlider.value = entity.currentHealth;
         
@@ -61,6 +62,23 @@ public class Monster : MonoBehaviour
         StopAllCoroutines();
     }
 
+    IEnumerator AttackRoutine(Player player) {
+        if (entity.canAttack) {
+            player.entity.currentHealth -= entity.damage;
+
+            entity.canAttack = false;
+            yield return new WaitForSeconds(2f);
+            entity.canAttack = true;
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D collision) {
+        if (collision.tag == "Player") {
+            Player player = collision.GetComponent<Player>();
+            StartCoroutine(AttackRoutine(player));
+        }
+    }
+
     void OnTriggerEnter2D(Collider2D collision) {
         if (collision.tag == "Player") {
             Player player = collision.GetComponent<Player>();
@@ -72,6 +90,7 @@ public class Monster : MonoBehaviour
         if (collision.tag == "Player") {
             Player player = collision.GetComponent<Player>();
             player.entity.target = null;
+            entity.target = null;
         }
     }
 }

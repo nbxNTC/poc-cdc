@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     public Image health1;
     public Image health2;
     public Image health3;
+    public Text levelText;
 
     [Header("Exp")]
     public int currentExp = 0;
@@ -39,7 +40,8 @@ public class Player : MonoBehaviour
 
         if (entity.currentHealth <= 0) Die();
 
-        HealthUI();    
+        HealthUI();
+        LevelUI();
     }
 
     private void HealthUI() {
@@ -60,6 +62,10 @@ public class Player : MonoBehaviour
             health2.enabled = false;
             health1.enabled = false;
         }
+    }     
+
+    private void LevelUI() {
+        levelText.text = "Level " + entity.level; 
     }
 
     IEnumerator RegenHealth() {
@@ -96,6 +102,9 @@ public class Player : MonoBehaviour
             currentExp -= expLeft;
             expLeft += 50;
             entity.level++;
+
+            entity.damage += 10;
+            entity.resistence += 5;
         }
         entity.currentHealth = entity.maxHealth;
 

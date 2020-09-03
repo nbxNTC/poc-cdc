@@ -16,10 +16,19 @@ public class Player : MonoBehaviour
     public Image health1;
     public Image health2;
     public Image health3;
+
+    [Header("Exp")]
+    public int currentExp;
+    public int expBase;
+    public int expLeft;
+    public float expMod;
+    public GameObject levelUpFX;
+    public AudioClip levelUpSound;
     
     void Start() {
         entity.currentHealth = entity.maxHealth;
         entity.currentMana = entity.maxMana;
+        
         StartCoroutine(RegenHealth());
     }    
 
@@ -31,6 +40,7 @@ public class Player : MonoBehaviour
     private void Teste() {
         if (Input.GetKeyDown(KeyCode.Space)) {
             entity.currentHealth--;
+            GainExp(10);
         }
     }
 
@@ -67,6 +77,20 @@ public class Player : MonoBehaviour
                 yield return null;
             }
         }
+    }
+
+    public void GainExp (int amount) {
+        currentExp += amount;
+        if (currentExp >= expLeft) LevelUp();
+    }
+
+    public void LevelUp () {
+        currentExp -= expLeft;
+        entity.level++;
+        entity.currentHealth = entity.maxHealth;
+
+        entity.entityAudio.PlayOneShot(levelUpSound);
+        Instantiate(levelUpFX, this.gameObject.transform);
     }
 
 }

@@ -1,167 +1,82 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-[RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(Animator))]
 public class Monster : MonoBehaviour
 {
     [Header("Controller")]
     public Entity entity = new Entity();
-    
-    [Header("Patrol")]
-    public Transform[] waypointList;
-    public float arrivalDistance = 0.5f;
-    public float waitTime = 5;
 
-    
-    Transform targetWaypoint;
-    int currentWaypoint = 0;
-    float lastDistanceToTarget = 0f;
-    float currentWaitTime = 0f;
+    [Header("UI")]
+    public Slider healthSlider;
 
-    [Header("Experience Reward")]
-    public int rewardExperience = 10;
-    public int lootGoldMin = 0;
-    public int lootGoldMax = 10;
+    [Header("Exp")]
+    private int expFeed = 100;
 
-    [Header("Respawn")]
-    public GameObject prefab;
-    public bool respawn = true;
-    public float respawnTime = 10f;
+    private Rigidbody2D rb;
 
-    Rigidbody2D rigidbody2D;
-    Animator animator;
-
-    private void start () {
-        rigidbody2D = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+    void Start () {        
+        rb = gameObject.GetComponent<Rigidbody2D>();
 
         entity.currentHealth = entity.maxHealth;
         entity.currentMana = entity.maxMana;
 
-        currentWaitTime = waitTime;
-        if (waypointList.Length > 0) {
-            targetWaypoint = waypointList[currentWaypoint];
-            lastDistanceToTarget = Vector2.Distance(transform.position, targetWaypoint.position);
-        }
+        entity.damage = 20;
+
+        healthSlider.value = entity.currentHealth;
+
+        StartCoroutine(RegenHealth());
     }
 
-    private void update () {
+    void Update () {
         if (entity.dead) return;
 
-        if (entity.currentHealth <= 0) {
-            entity.currentHealth = 0;
-            Die();
-        }
+        if (entity.currentHealth <= 0) Die();
 
-        if (!entity.inCombat) {
-            if (waypointList.Length > 0) {
-                Patrol();
+        healthSlider.value = entity.currentHealth;
+
+        Teste();
+    }
+
+    private void Teste() {
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            entity.currentHealth--;
+        }
+    }
+
+    IEnumerator RegenHealth() {
+        while(true) {
+            if (entity.currentHealth < entity.maxHealth) {
+                entity.currentHealth++;
+                yield return new WaitForSeconds(2f);
             } else {
-                animator.SetBool("isWalking", false);
-            }
-        } else {
-            if (entity.attackTimer > 0) entity.attackTimer -= Time.deltaTime;
-            
-            if (entity.attackTimer < 0) entity.attackTimer = 0;
-
-            if (entity.target != null && entity.inCombat) {
-                if(!entity.combatCoroutine) StartCoroutine(Attack());
-            } else {
-                entity.combatCoroutine = false;
-                StopCoroutine(Attack());
-            }
-        }
-    }
-
-    private void OnTriggerStay2D (Collider2D collider) {
-        if (collider.tag == "Player" && !entity.dead) {
-            entity.inCombat = true;
-            entity.target = collider.gameObject;
-            entity.target.GetComponent<BoxCollider2D>().isTrigger = true;
-        }
-    }
-
-    private void OnTriggerExit2D (Collider2D collider) {
-        if (collider.tag == "Player" ) {
-            entity.inCombat = false;
-            if (entity.target) {
-                entity.target.GetComponent<BoxCollider2D>().isTrigger = false;
-                entity.target = null;
-            }
-            
-        }
-    }
-
-    void Patrol () {
-        if (entity.dead) return;
-
-        float distanceToTarget = Vector2.Distance(transform.position, targetWaypoint.position);
-
-        if (distanceToTarget <= arrivalDistance || distanceToTarget >= lastDistanceToTarget) {
-            animator.SetBool("isWalking", false);
-
-            if (currentWaitTime <= 0) {
-                currentWaypoint++;
-
-                if (currentWaypoint >= waypointList.Length) currentWaypoint = 0;
-
-                targetWaypoint = waypointList[currentWaypoint];
-                lastDistanceToTarget = Vector2.Distance(transform.position, targetWaypoint.position);
-
-                currentWaitTime = waitTime;
-            } else {
-                currentWaitTime -= Time.deltaTime;
-            }
-        } else {
-            animator.SetBool("isWalking", true);
-            lastDistanceToTarget = distanceToTarget;
-        }
-
-        Vector2 direction = (targetWaypoint.position - transform.position).normalized;
-        animator.SetFloat("moveX", direction.x);
-        animator.SetFloat("moveY", direction.y);
-
-        rigidbody2D.MovePosition(rigidbody2D.position + direction * (entity.speed * Time.fixedDeltaTime));
-        
-    }
-
-    IEnumerator Attack () {
-        entity.combatCoroutine = true;
-        while (true) {
-            yield return new WaitForSeconds(entity.cooldown);
-
-            if (entity.target != null && !entity.target.GetComponent<Player>().entity.dead) {
-                float distance = Vector2.Distance(entity.target.transform.position, transform.position);
-                
-                if (distance <= entity.attackDistance) {
-                    // Attack player
-                }
+                yield return null;
             }
         }
     }
 
     void Die () {
+        entity.target.GetComponent<Player>().GainExp(expFeed);
+        entity.currentHealth = 0;
         entity.dead = true;
-        entity.inCombat = false;
         entity.target = null;
-
-        animator.SetBool("isWalking", false);
-
-        Debug.Log("O inimigo morreu: " + entity.name);
+        Destroy(this.gameObject);
 
         StopAllCoroutines();
-        StartCoroutine(Respawn());
     }
 
-    IEnumerator Respawn () {
-        yield return new WaitForSeconds(respawnTime);
+    void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.tag == "Player") {
+            Player player = collision.GetComponent<Player>();
+            player.entity.target = this.gameObject;
+        }
+    }
 
-        GameObject newMonster = Instantiate(prefab, transform.position, transform.rotation, null);
-        newMonster.name = prefab.name;
-        newMonster.GetComponent<Monster>().entity.dead = false;
-
-        Destroy(this.gameObject);
+    void OnTriggerExit2D(Collider2D collision) {
+        if (collision.tag == "Player") {
+            Player player = collision.GetComponent<Player>();
+            player.entity.target = null;
+        }
     }
 }

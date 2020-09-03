@@ -23,7 +23,8 @@ public class PlayerController : MonoBehaviour
     }
 
     private void Update() {
-        Movement();                   
+        Movement();
+        Attack();
     }
 
     // Player Function
@@ -43,5 +44,33 @@ public class PlayerController : MonoBehaviour
             _animator.SetBool("moving", false);
         }
     }    
+
+    private void Attack() {
+        if (Input.GetKeyDown(KeyCode.Mouse0)) StartCoroutine(AttackRoutine());
+    }
+
+    IEnumerator AttackRoutine() {
+        if (player.entity.canAttack) {
+            Monster monster = player.entity.target.GetComponent<Monster>();
+            monster.entity.currentHealth -= player.entity.damage;
+            monster.entity.target = this.gameObject;
+            
+            player.entity.canAttack = false;
+            yield return new WaitForSeconds(player.entity.fireRate);
+            player.entity.canAttack = true;
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.tag != "Enemy") return;
+        player.entity.canAttack = true;
+        Monster monster = collision.GetComponent<Monster>();
+        monster.entity.target = player.gameObject;
+    }
+
+    void OnTriggerExit2D(Collider2D collision) {
+        if (collision.tag != "Enemy") return;
+        player.entity.canAttack = false;
+    }
     
 }

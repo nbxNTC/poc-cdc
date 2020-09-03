@@ -18,21 +18,27 @@ public class Player : MonoBehaviour
     public Image health3;
 
     [Header("Exp")]
-    public int currentExp;
-    public int expBase;
-    public int expLeft;
-    public float expMod;
+    public int currentExp = 0;
+    public int expLeft = 50;
     public GameObject levelUpFX;
     public AudioClip levelUpSound;
     
     void Start() {
         entity.currentHealth = entity.maxHealth;
         entity.currentMana = entity.maxMana;
+
+        entity.damage = 50;
+        entity.fireRate = 1;
+        entity.speed = 3;
         
         StartCoroutine(RegenHealth());
     }    
 
     void Update() {
+        if (entity.dead) return;
+
+        if (entity.currentHealth <= 0) Die();
+
         HealthUI();
         Teste();
     }
@@ -79,14 +85,24 @@ public class Player : MonoBehaviour
         }
     }
 
+    void Die () {
+        entity.dead = true;
+        entity.currentHealth = 0;
+        entity.target = null;
+        StopAllCoroutines();
+    }
+
     public void GainExp (int amount) {
         currentExp += amount;
         if (currentExp >= expLeft) LevelUp();
     }
 
     public void LevelUp () {
-        currentExp -= expLeft;
-        entity.level++;
+        while (currentExp >= expLeft) {
+            currentExp -= expLeft;
+            expLeft += 50;
+            entity.level++;
+        }
         entity.currentHealth = entity.maxHealth;
 
         entity.entityAudio.PlayOneShot(levelUpSound);

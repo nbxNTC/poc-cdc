@@ -25,7 +25,7 @@ public class Monster : MonoBehaviour
         entity.currentHealth = entity.maxHealth;
         entity.currentMana = entity.maxMana;
 
-        entity.damage = 1;
+        entity.damage = 10;
         entity.canAttack = true;
 
         healthSlider.value = entity.currentHealth;

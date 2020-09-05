@@ -13,10 +13,9 @@ public class Player : MonoBehaviour
     private float regenHPTime = 5f;
 
     [Header("Player UI")]
-    public Image health1;
-    public Image health2;
-    public Image health3;
+    public Text nameText;
     public Text levelText;
+    public Slider hpSlider;
 
     [Header("Exp")]
     public int currentExp = 0;
@@ -39,33 +38,22 @@ public class Player : MonoBehaviour
         if (entity.dead) return;
 
         if (entity.currentHealth <= 0) Die();
-
+        
+        NameUI();
         HealthUI();
         LevelUI();
     }
 
+    private void NameUI() {
+       nameText.text = entity.name;
+    }   
+
     private void HealthUI() {
-        if (entity.currentHealth == 3) {
-            health3.enabled = true;
-            health2.enabled = true;
-            health1.enabled = true;
-        } else if (entity.currentHealth == 2) {
-            health3.enabled = false;
-            health2.enabled = true;
-            health1.enabled = true;
-        } else if (entity.currentHealth == 1) {
-            health3.enabled = false;
-            health2.enabled = false;
-            health1.enabled = true;
-        } else {
-            health3.enabled = false;
-            health2.enabled = false;
-            health1.enabled = false;
-        }
+        hpSlider.value = entity.currentHealth;
     }     
 
     private void LevelUI() {
-        levelText.text = "Level " + entity.level; 
+        levelText.text = "Lvl " + entity.level; 
     }
 
     IEnumerator RegenHealth() {

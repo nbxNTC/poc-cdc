@@ -23,12 +23,6 @@ public class Entity {
     public int damage = 10;
     public float speed = 3f;
 
-    [Header("Combat")]
-    public bool canAttack = true;
-    public float fireRate = 2f;
-    public GameObject target;
-    public bool dead = false;
-
     [Header("Component")]
     public AudioSource entityAudio;
 }

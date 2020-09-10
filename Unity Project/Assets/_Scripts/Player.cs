@@ -1,21 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Player : MonoBehaviour 
 {
-
+    [Header("Controller")]
     public Entity entity;
-
-    [Header("Player Regen System")]
-    private bool regenHPEnabled = false;
-    private float regenHPTime = 5f;
-
-    [Header("Player UI")]
-    public Text nameText;
-    public Text levelText;
-    public Slider hpSlider;
 
     [Header("Exp")]
     public int currentExp = 0;
@@ -27,57 +17,22 @@ public class Player : MonoBehaviour
         entity.currentHealth = entity.maxHealth;
         entity.currentMana = entity.maxMana;
 
-        entity.damage = 50;
-        entity.fireRate = 1;
+        entity.damage = 50;    
         entity.speed = 3;
-        
-        StartCoroutine(RegenHealth());
-    }    
-
-    void Update() {
-        if (entity.dead) return;
-
-        if (entity.currentHealth <= 0) Die();
-        
-        NameUI();
-        HealthUI();
-        LevelUI();
     }
 
-    private void NameUI() {
-       nameText.text = entity.name;
-    }   
+    public bool TakeDamage(int damage) {
+        entity.currentHealth -= damage;
 
-    private void HealthUI() {
-        hpSlider.value = entity.currentHealth;
-    }     
-
-    private void LevelUI() {
-        levelText.text = "Lvl " + entity.level; 
+        if (entity.currentHealth <= 0) return true;
+        else return false;
     }
 
-    IEnumerator RegenHealth() {
-        while(true) {
-            if (regenHPEnabled) {
-                if (entity.currentHealth < entity.maxHealth) {
-                    entity.currentHealth++;
-                    yield return new WaitForSeconds(regenHPTime);
-                } else {
-                    yield return null;
-                }
-            } else {
-                yield return null;
-            }
-        }
-    }
+    public void Heal(int health) {
+        entity.currentHealth += health;
 
-    void Die () {
-        entity.dead = true;
-        entity.currentHealth = 0;
-        entity.target = null;
-        Destroy(this.gameObject);
-
-        StopAllCoroutines();
+        if (entity.currentHealth > entity.maxHealth) 
+            entity.currentHealth = entity.maxHealth;
     }
 
     public void GainExp (int amount) {

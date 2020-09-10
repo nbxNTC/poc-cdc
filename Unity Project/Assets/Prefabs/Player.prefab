@@ -288,14 +288,7 @@ MonoBehaviour:
     resistence: 1
     damage: 20
     speed: 3
-    canAttack: 0
-    fireRate: 2
-    target: {fileID: 0}
-    dead: 0
     entityAudio: {fileID: -8443126426460587679}
-  nameText: {fileID: 0}
-  levelText: {fileID: 0}
-  hpSlider: {fileID: 0}
   currentExp: 0
   expLeft: 50
   levelUpFX: {fileID: 4663125923826465873, guid: fd122f9f2a164e4498815e223aa2462b,

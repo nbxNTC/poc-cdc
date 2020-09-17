@@ -7,7 +7,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     // Player Properties
-    public Player player;    
+    public Player player;
 
     // Player Animations
     private Animator _animator;
@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
         _movementInput.x = Input.GetAxisRaw("Horizontal");
         _movementInput.y = Input.GetAxisRaw("Vertical");
         
-        if (_movementInput != Vector2.zero) {
+        if (_movementInput != Vector2.zero && player.canMove) {
             _myRigidbody.MovePosition(
                 _myRigidbody.position + _movementInput * player.entity.speed * Time.fixedDeltaTime
             );

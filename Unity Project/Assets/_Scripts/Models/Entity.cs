@@ -19,9 +19,9 @@ public class Entity {
 
     [Header("Stats")]
     public int level = 0;
-    public int resistence = 2;
-    public int damage = 10;
-    public float speed = 3f;
+    public int resistence;
+    public int damage;
+    public float speed;
 
     [Header("Component")]
     public AudioSource entityAudio;

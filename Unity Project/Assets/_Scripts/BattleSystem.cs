@@ -7,14 +7,6 @@ public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST}
 
 public class BattleSystem : MonoBehaviour
 {   
-    [Header("Prefabs")]
-    public GameObject playerPrefab;
-    public GameObject enemyPrefab;
-
-    [Header("Battle Stations")]
-    public Transform playerBattleStation;
-    public Transform enemyBattleStation;
-
     [Header("Battle Dialogue")]
     public Text dialogueText;
 
@@ -32,26 +24,22 @@ public class BattleSystem : MonoBehaviour
     [Header("State")]
     BattleState state;
 
-    [Header("Game Objects")]
-    GameObject playerGO;
-    GameObject enemyGO;
-
+    [Header("References")]
     Player player;
     Monster monster;
 
-    void Start() {
+    public void StartBattle(Player player, Monster monster) {
+        this.player = player;
+        this.monster = monster;
+
+        player.canMove = false;
+
         state = BattleState.START;
         StartCoroutine(SetupBattle());
     }
 
     IEnumerator SetupBattle() {
-        canvas.SetActive(true);
-
-        playerGO = Instantiate(playerPrefab, playerBattleStation);
-        player = playerGO.GetComponent<Player>();
-        
-        enemyGO = Instantiate(enemyPrefab, enemyBattleStation);
-        monster = enemyGO.GetComponent<Monster>();
+        canvas.SetActive(true);    
 
         dialogueText.text = "Um " + monster.entity.name + " apareceu...";
 
@@ -74,7 +62,7 @@ public class BattleSystem : MonoBehaviour
 
         if (isDead) {
             state = BattleState.WON;
-            Destroy(enemyGO);
+            Destroy(monster.gameObject);
             EndBattle();
         } else {
             state = BattleState.ENEMYTURN;
@@ -83,7 +71,7 @@ public class BattleSystem : MonoBehaviour
     }
 
     IEnumerator PlayerHeal() {
-        player.Heal(10);
+        player.Heal(30);
 
         playerHUD.SetHP(player.entity.currentHealth);
         dialogueText.text = "Você foi curado!";
@@ -118,13 +106,15 @@ public class BattleSystem : MonoBehaviour
     void EndBattle() {
         if (state == BattleState.WON) {
             dialogueText.text = "Você venceu a batalha!";
-
+            
             player.GainExp(monster.expFeed);
+
+            player.canMove = true;
         } else if (state == BattleState.LOST) {
             dialogueText.text = "Você foi derrotado!";
         }
 
-        // canvas.SetActive(false);
+        canvas.SetActive(false);
     }
 
     void PlayerTurn() {

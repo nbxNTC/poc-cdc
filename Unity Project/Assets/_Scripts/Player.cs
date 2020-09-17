@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     [Header("Controller")]
     public Entity entity;
+    public bool canMove = true;
 
     [Header("Exp")]
     public int currentExp = 0;
@@ -17,12 +18,15 @@ public class Player : MonoBehaviour
         entity.currentHealth = entity.maxHealth;
         entity.currentMana = entity.maxMana;
 
+        entity.resistence = 1;
         entity.damage = 50;    
-        entity.speed = 3;
+        entity.speed = 3f;
     }
 
     public bool TakeDamage(int damage) {
-        entity.currentHealth -= damage;
+        int updatedDamage = damage - entity.resistence;
+
+        if (updatedDamage > 0) entity.currentHealth -= updatedDamage;
 
         if (entity.currentHealth <= 0) return true;
         else return false;
@@ -46,7 +50,7 @@ public class Player : MonoBehaviour
             expLeft += 50;
             entity.level++;
 
-            entity.damage += 10;
+            entity.damage += 7;
             entity.resistence += 5;
         }
         entity.currentHealth = entity.maxHealth;

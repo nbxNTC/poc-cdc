@@ -10,8 +10,8 @@ public class BattleSystem : MonoBehaviour
     [Header("Battle Dialogue")]
     public Text dialogueText;
 
-    [Header("Battle Canvas")]
-    public GameObject canvas;
+    [Header("Battle UI")]
+    public GameObject battleUI;
 
     [Header("Battle Buttons")]
     public GameObject attackButton;
@@ -39,7 +39,7 @@ public class BattleSystem : MonoBehaviour
     }
 
     IEnumerator SetupBattle() {
-        canvas.SetActive(true);    
+        battleUI.SetActive(true);    
 
         dialogueText.text = "Um " + monster.entity.name + " apareceu...";
 
@@ -114,7 +114,7 @@ public class BattleSystem : MonoBehaviour
             dialogueText.text = "Você foi derrotado!";
         }
 
-        canvas.SetActive(false);
+        battleUI.SetActive(false);
     }
 
     void PlayerTurn() {

@@ -15,6 +15,10 @@ public class PlayerController : MonoBehaviour
     // Rigidbody     
     private Rigidbody2D _myRigidbody;   
     private Vector2 _movementInput = Vector2.zero;
+
+    //teste
+    public DialogSystem dialogSystem;
+    public DialogModel dialog;
         
     private void Start() {
         _animator = GetComponent<Animator>();
@@ -23,7 +27,11 @@ public class PlayerController : MonoBehaviour
     }
 
     private void Update() {
-        Movement();    
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            dialogSystem.StartDialog(dialog);
+        }
+
+        Movement();
     }
 
     // Player Function

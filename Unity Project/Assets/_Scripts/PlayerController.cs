@@ -6,19 +6,15 @@ using UnityEngine;
 [RequireComponent(typeof(Player))]
 public class PlayerController : MonoBehaviour
 {
-    // Player Properties
+    [Header("Player")]
     public Player player;
 
-    // Player Animations
+    [Header("Animator")]
     private Animator _animator;
 
-    // Rigidbody     
+    [Header("Rigidbody")]
     private Rigidbody2D _myRigidbody;   
-    private Vector2 _movementInput = Vector2.zero;
-
-    //teste
-    public DialogSystem dialogSystem;
-    public DialogModel dialog;
+    private Vector2 _movementInput = Vector2.zero;    
         
     private void Start() {
         _animator = GetComponent<Animator>();
@@ -27,14 +23,9 @@ public class PlayerController : MonoBehaviour
     }
 
     private void Update() {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            dialogSystem.StartDialog(dialog);
-        }
-
         Movement();
     }
-
-    // Player Function
+        
     private void Movement() {
         _movementInput.x = Input.GetAxisRaw("Horizontal");
         _movementInput.y = Input.GetAxisRaw("Vertical");

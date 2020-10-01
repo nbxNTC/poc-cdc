@@ -16,6 +16,8 @@ public class DialogSystem : MonoBehaviour
     [Header("Control")]
     public DialogModel current;
 
+    private Player player;
+
     void Update() {
         if (current != null) {
             dialogText.text = current.text;
@@ -24,13 +26,16 @@ public class DialogSystem : MonoBehaviour
         }
     }
 
-    public void StartDialog(DialogModel initialDialog) {    
+    public void StartDialog(DialogModel initialDialog, Player player) {    
+        this.player = player;
+        player.canMove = false;
         dialogUI.SetActive(true);
         current = initialDialog;
     }
 
     public void ExitDialog() {
         dialogUI.SetActive(false);
+        player.canMove = true;
     }
 
     public void onNextButton() {

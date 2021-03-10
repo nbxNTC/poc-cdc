@@ -31,10 +31,8 @@ public class PlayerController : MonoBehaviour
         _movementInput.y = Input.GetAxisRaw("Vertical");
         
         if (_movementInput != Vector2.zero && player.canMove) {
-            _myRigidbody.MovePosition(
-                _myRigidbody.position + _movementInput * player.entity.speed * Time.fixedDeltaTime
-            );
-            
+            _myRigidbody.MovePosition(transform.position += (Vector3)_movementInput * player.entity.speed * Time.deltaTime);
+
             _animator.SetFloat("moveX", _movementInput.x);  
             _animator.SetFloat("moveY", _movementInput.y);
             _animator.SetBool("moving", true);

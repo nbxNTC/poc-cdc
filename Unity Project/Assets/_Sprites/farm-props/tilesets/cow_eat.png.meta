@@ -791,6 +791,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -798,19 +810,19 @@ TextureImporter:
       name: cow_eat_0
       rect:
         serializedVersion: 2
-        x: 51
-        y: 402
-        width: 27
-        height: 70
+        x: 0
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf8bc54f874469aa0800000000000000
-      internalID: -6154656554468722437
+      spriteID: 9c0370256be9b4de0800000000000000
+      internalID: -1347809157569892151
       vertices: []
       indices: 
       edges: []
@@ -819,19 +831,19 @@ TextureImporter:
       name: cow_eat_1
       rect:
         serializedVersion: 2
-        x: 179
-        y: 402
-        width: 27
-        height: 65
+        x: 128
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94c175d26946fdc40800000000000000
-      internalID: 5539256662857555017
+      spriteID: 91a09ee14f1894fa0800000000000000
+      internalID: -5815974558281692647
       vertices: []
       indices: 
       edges: []
@@ -840,19 +852,19 @@ TextureImporter:
       name: cow_eat_2
       rect:
         serializedVersion: 2
-        x: 307
-        y: 402
-        width: 27
-        height: 59
+        x: 256
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 957c33507191aa250800000000000000
-      internalID: 5956601043813123929
+      spriteID: 988ce044843f6da20800000000000000
+      internalID: 3086922086314068105
       vertices: []
       indices: 
       edges: []
@@ -861,19 +873,19 @@ TextureImporter:
       name: cow_eat_3
       rect:
         serializedVersion: 2
-        x: 435
-        y: 402
-        width: 27
-        height: 58
+        x: 384
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32d07159a2ae1b7e0800000000000000
-      internalID: -1751361311459570397
+      spriteID: b8f48dffae0605ce0800000000000000
+      internalID: -1418527320190726261
       vertices: []
       indices: 
       edges: []
@@ -882,19 +894,19 @@ TextureImporter:
       name: cow_eat_4
       rect:
         serializedVersion: 2
-        x: 21
-        y: 296
-        width: 71
-        height: 44
+        x: 0
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5946828b547b72d60800000000000000
-      internalID: 7865456784296141973
+      spriteID: c9b86b6f131956240800000000000000
+      internalID: 4784389822929603484
       vertices: []
       indices: 
       edges: []
@@ -903,19 +915,19 @@ TextureImporter:
       name: cow_eat_5
       rect:
         serializedVersion: 2
-        x: 149
-        y: 296
-        width: 71
-        height: 42
+        x: 128
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47d837c1cd0d42670800000000000000
-      internalID: 8513158839425797492
+      spriteID: 045d8f1b480b32e90800000000000000
+      internalID: -7051598507564018368
       vertices: []
       indices: 
       edges: []
@@ -924,19 +936,19 @@ TextureImporter:
       name: cow_eat_6
       rect:
         serializedVersion: 2
-        x: 280
-        y: 296
-        width: 68
-        height: 42
+        x: 256
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77eefa8db2eea52c0800000000000000
-      internalID: -4441976210361160073
+      spriteID: 43741afedf463c6d0800000000000000
+      internalID: -2971420287324567756
       vertices: []
       indices: 
       edges: []
@@ -945,19 +957,19 @@ TextureImporter:
       name: cow_eat_7
       rect:
         serializedVersion: 2
-        x: 408
-        y: 296
-        width: 68
-        height: 42
+        x: 384
+        y: 254
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5a472c4ab7d860a0800000000000000
-      internalID: -6888018434921641381
+      spriteID: 7e2368e3da3f3ffc0800000000000000
+      internalID: -3462155763113905433
       vertices: []
       indices: 
       edges: []
@@ -966,19 +978,19 @@ TextureImporter:
       name: cow_eat_8
       rect:
         serializedVersion: 2
-        x: 51
-        y: 154
-        width: 27
-        height: 57
+        x: 0
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d857cc3f983c84b80800000000000000
-      internalID: -8410257306846202483
+      spriteID: 1e14ae42805b56490800000000000000
+      internalID: -7753592136864742943
       vertices: []
       indices: 
       edges: []
@@ -987,19 +999,19 @@ TextureImporter:
       name: cow_eat_9
       rect:
         serializedVersion: 2
-        x: 179
-        y: 154
-        width: 27
-        height: 57
+        x: 128
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dda1f97ae31f59130800000000000000
-      internalID: 3573027130790845149
+      spriteID: 45774c44fb511c570800000000000000
+      internalID: 8485087084179388244
       vertices: []
       indices: 
       edges: []
@@ -1008,19 +1020,19 @@ TextureImporter:
       name: cow_eat_10
       rect:
         serializedVersion: 2
-        x: 307
-        y: 152
-        width: 27
-        height: 59
+        x: 256
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60dc5b01b545ec9b0800000000000000
-      internalID: -5058012581391381242
+      spriteID: c4538209b66244c90800000000000000
+      internalID: -7186576861954558644
       vertices: []
       indices: 
       edges: []
@@ -1029,19 +1041,19 @@ TextureImporter:
       name: cow_eat_11
       rect:
         serializedVersion: 2
-        x: 435
-        y: 152
-        width: 27
-        height: 59
+        x: 384
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 506cb46a8f145dce0800000000000000
-      internalID: -1381125174521510395
+      spriteID: 45eb79d68743bf930800000000000000
+      internalID: 4177990771155648084
       vertices: []
       indices: 
       edges: []
@@ -1050,19 +1062,19 @@ TextureImporter:
       name: cow_eat_12
       rect:
         serializedVersion: 2
-        x: 36
-        y: 40
-        width: 71
-        height: 44
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56c80076885939cf0800000000000000
-      internalID: -246689141499065243
+      spriteID: fc78df1e7e2b42a30800000000000000
+      internalID: 4189670262360082383
       vertices: []
       indices: 
       edges: []
@@ -1071,19 +1083,19 @@ TextureImporter:
       name: cow_eat_13
       rect:
         serializedVersion: 2
-        x: 164
-        y: 40
-        width: 71
-        height: 42
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20612fe79da1d98c0800000000000000
-      internalID: -3991004173340371454
+      spriteID: 255f9ab4470a013c0800000000000000
+      internalID: -4390833215340153518
       vertices: []
       indices: 
       edges: []
@@ -1092,19 +1104,19 @@ TextureImporter:
       name: cow_eat_14
       rect:
         serializedVersion: 2
-        x: 292
-        y: 40
-        width: 68
-        height: 42
+        x: 256
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b55c575159cef7670800000000000000
-      internalID: 8538803543572071771
+      spriteID: 565dbda0baa5ca520800000000000000
+      internalID: 2714644366065653093
       vertices: []
       indices: 
       edges: []
@@ -1113,19 +1125,19 @@ TextureImporter:
       name: cow_eat_15
       rect:
         serializedVersion: 2
-        x: 420
-        y: 40
-        width: 68
-        height: 42
+        x: 384
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24202d489069bc580800000000000000
-      internalID: -8805779678765645246
+      spriteID: e7856abf9b8222730800000000000000
+      internalID: 3972782600550242430
       vertices: []
       indices: 
       edges: []

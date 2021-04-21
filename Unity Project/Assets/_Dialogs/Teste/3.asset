@@ -13,5 +13,10 @@ MonoBehaviour:
   m_Name: 3
   m_EditorClassIdentifier: 
   text: Ao inves disso, eu gostaria de te oferecer um item.
+  goToNextMap: 1
+  nextXPosition: 0
+  nextYPosition: 20
+  nextMaxPosition: {x: 15.6, y: -21.89696}
+  nextMinPosition: {x: -15.6, y: -54.2575}
   next: {fileID: 0}
   back: {fileID: 11400000, guid: dd9e32ca65be3ad46aefad8c3439ae7e, type: 2}

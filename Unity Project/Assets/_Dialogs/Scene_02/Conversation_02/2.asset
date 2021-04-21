@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ef7f7dfb088c294e8e2f385858ef7a8, type: 3}
+  m_Name: 2
+  m_EditorClassIdentifier: 
+  text: "Vamos ver\u2026 Temos uma vaga que se encaixa perfeitamente no que voc\xEA
+    quer. Voc\xEA iria trabalhar em uma ind\xFAstria que produz \u201C...\u201D.
+    E o sal\xE1rio \xE9 muito bom."
+  goToNextMap: 0
+  nextXPosition: 0
+  nextYPosition: 0
+  nextMaxPosition: {x: 0, y: 0}
+  nextMinPosition: {x: 0, y: 0}
+  next: {fileID: 11400000, guid: 956d3a6e7a4519a4ba483ccd15d9d45b, type: 2}
+  back: {fileID: 11400000, guid: 5078242355727ce4690bee6d60999158, type: 2}

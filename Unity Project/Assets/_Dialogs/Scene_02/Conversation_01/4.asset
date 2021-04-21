@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ef7f7dfb088c294e8e2f385858ef7a8, type: 3}
+  m_Name: 4
+  m_EditorClassIdentifier: 
+  text: "Mas enfim, se voc\xEA continuar seguindo esta rua, voc\xEA encontrar\xE1
+    um estabelecimento que tem uma placa escrita \u201CVagas de Emprego\u201D."
+  goToNextMap: 0
+  nextXPosition: 0
+  nextYPosition: 20
+  nextMaxPosition: {x: 15.6, y: -21.89696}
+  nextMinPosition: {x: -15.6, y: -54.2575}
+  next: {fileID: 11400000, guid: cdb258d234b7431448a73845be6e3742, type: 2}
+  back: {fileID: 11400000, guid: 4cf6807d1d8f09c4ab5b28757cf45fbf, type: 2}

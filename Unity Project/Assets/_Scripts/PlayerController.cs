@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     private void Start() {
         _animator = GetComponent<Animator>();
         _myRigidbody = GetComponent<Rigidbody2D>();
-        player = GetComponent<Player>(); 
+        player = GetComponent<Player>();
     }
 
     private void Update() {

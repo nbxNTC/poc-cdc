@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ef7f7dfb088c294e8e2f385858ef7a8, type: 3}
   m_Name: 1
   m_EditorClassIdentifier: 
-  text: "Pai, o que aconteceu, voc\xEA est\xE1 muito machucado."
+  text: "Tsuki: Pare agora mesmo! Estes animais s\xE3o da minha fam\xEDlia."
   goToNextMap: 0
   nextXPosition: 0
   nextYPosition: 0

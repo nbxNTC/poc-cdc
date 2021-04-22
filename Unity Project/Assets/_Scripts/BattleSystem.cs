@@ -71,7 +71,7 @@ public class BattleSystem : MonoBehaviour
     }
 
     IEnumerator PlayerHeal() {
-        player.Heal(30);
+        player.Heal(10);
 
         playerHUD.SetHP(player.entity.currentHealth);
         dialogueText.text = "Você foi curado!";

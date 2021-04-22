@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6821607136103407842}
   - component: {fileID: 6966337893791854869}
   m_Layer: 0
-  m_Name: Alone Dialog
+  m_Name: Conversation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,4 +85,5 @@ MonoBehaviour:
   dialogSystem: {fileID: 0}
   dialog: {fileID: 11400000, guid: 299851f1d309d244da2cf5f6f85a7b2f, type: 2}
   aloneDialog: {fileID: 6821607136103407841}
-  hideWhenFinished: 1
+  hideWhenFinished: 0
+  id: 1

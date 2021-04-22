@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ef7f7dfb088c294e8e2f385858ef7a8, type: 3}
   m_Name: 2
   m_EditorClassIdentifier: 
-  text: "Claro\u2026 que n\xE3o, hahaha. V\xE1 alimentar os animais, perto do celeiro."
+  text: "Pai: Claro\u2026 que n\xE3o, hahaha. V\xE1 alimentar nossas vacas e galinhas."
   goToNextMap: 0
   nextXPosition: 0
   nextYPosition: 0

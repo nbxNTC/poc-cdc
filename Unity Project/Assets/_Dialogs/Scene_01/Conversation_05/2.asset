@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ef7f7dfb088c294e8e2f385858ef7a8, type: 3}
   m_Name: 2
   m_EditorClassIdentifier: 
-  text: "Estamos bem, meu filho, mas os ladr\xF5es roubaram todo o nosso dinheiro
-    e agora n\xE3o vamos mais conseguir nos manter no pr\xF3ximo m\xEAs."
+  text: "Ladr\xF5es: N\xE3o importa se v\xE3o morrer ou n\xE3o. "
   goToNextMap: 0
   nextXPosition: 0
   nextYPosition: 0

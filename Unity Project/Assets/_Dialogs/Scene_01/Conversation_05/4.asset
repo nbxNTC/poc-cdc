@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ef7f7dfb088c294e8e2f385858ef7a8, type: 3}
   m_Name: 4
   m_EditorClassIdentifier: 
-  text: "Tome muito cuidado meu filho, o seu caminho vai estar infestado de pessoas
-    querendo te derrubar, e al\xE9m disso estes ladr\xF5es podem ter um grupo maior."
+  text: "Tsuki: Ent\xE3o vou ter que ser obrigado a acabar com voc\xEAs."
   goToNextMap: 0
   nextXPosition: 0
   nextYPosition: 20

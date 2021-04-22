@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     [Header("Controller")]
     public Entity entity;
     public bool canMove = true;
+    public int currentDialogId = 1;
 
     [Header("Exp")]
     public int currentExp = 0;

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ef7f7dfb088c294e8e2f385858ef7a8, type: 3}
   m_Name: 1
   m_EditorClassIdentifier: 
-  text: "Eu terminei minha \xFAltima tarefa, agora j\xE1 posso descansar? "
+  text: "Tsuki: Eu terminei minha \xFAltima tarefa, agora j\xE1 posso descansar? "
   goToNextMap: 0
   nextXPosition: 0
   nextYPosition: 0

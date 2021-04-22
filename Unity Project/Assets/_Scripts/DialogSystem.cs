@@ -46,13 +46,16 @@ public class DialogSystem : MonoBehaviour
         if (current.next != null) {
             current = current.next;
         } else {
-            if (current.goToNextMap) {
+            if (current.hasNextPosition) {
                 loadingUI.SetActive(true);
 
                 cameraMovement.maxPosition = current.nextMaxPosition;
                 cameraMovement.minPosition = current.nextMinPosition;
 
-                player.transform.position = new Vector2(-17, -44);
+                Debug.Log(current.nextXPosition);
+                Debug.Log(current.nextYPosition);
+
+                player.transform.position = new Vector2(current.nextXPosition, current.nextYPosition);
 
                 StartCoroutine(DisableLoading());
             }

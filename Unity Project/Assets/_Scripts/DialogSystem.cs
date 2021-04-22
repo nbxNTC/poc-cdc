@@ -56,6 +56,7 @@ public class DialogSystem : MonoBehaviour
 
                 StartCoroutine(DisableLoading());
             }
+
             ExitDialog();
         }
     }

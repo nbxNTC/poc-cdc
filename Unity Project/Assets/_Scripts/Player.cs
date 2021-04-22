@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
 
         entity.resistence = 1;
         entity.damage = 50;    
-        entity.speed = 3f;
+        entity.speed = 2.5f;
     }
 
     public bool TakeDamage(int damage) {

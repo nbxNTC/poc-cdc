@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ef7f7dfb088c294e8e2f385858ef7a8, type: 3}
   m_Name: 2
   m_EditorClassIdentifier: 
-  text: "Tsuki: Estou com uma dor de cabe\xE7a muito forte."
+  text: "M\xE3e: Estamos bem, meu filho, mas os ladr\xF5es roubaram todo o nosso
+    dinheiro."
   hasNextPosition: 0
   nextXPosition: 0
   nextYPosition: 0
   nextMaxPosition: {x: 0, y: 0}
   nextMinPosition: {x: 0, y: 0}
-  next: {fileID: 11400000, guid: bc0a664c73844ca4e9e6c7ef329cf70f, type: 2}
-  back: {fileID: 11400000, guid: 1dde4243ef44c3e419a284c4a5cc4694, type: 2}
+  next: {fileID: 11400000, guid: 530879934c0852644b0376e2d6f94973, type: 2}
+  back: {fileID: 11400000, guid: 170703147d1474b4aa3cd2b4055974f9, type: 2}

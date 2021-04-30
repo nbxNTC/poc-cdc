@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ef7f7dfb088c294e8e2f385858ef7a8, type: 3}
   m_Name: 4
   m_EditorClassIdentifier: 
-  text: "Tsuki: \xC9 mesmo, devo ver como est\xE3o meus pais."
+  text: "Tsuki: O que importa \xE9 que voc\xEAs est\xE3o bem, e eu vou garantir que
+    isso continue dessa forma."
   hasNextPosition: 0
-  nextXPosition: -1.66
-  nextYPosition: 2
-  nextMaxPosition: {x: 15.6, y: 16.23}
-  nextMinPosition: {x: -15.6, y: -16.23}
-  next: {fileID: 0}
-  back: {fileID: 11400000, guid: bc0a664c73844ca4e9e6c7ef329cf70f, type: 2}
+  nextXPosition: 0
+  nextYPosition: 0
+  nextMaxPosition: {x: 0, y: 0}
+  nextMinPosition: {x: 0, y: 0}
+  next: {fileID: 11400000, guid: 4677e34affb821843ac01f15c0524a46, type: 2}
+  back: {fileID: 11400000, guid: 530879934c0852644b0376e2d6f94973, type: 2}

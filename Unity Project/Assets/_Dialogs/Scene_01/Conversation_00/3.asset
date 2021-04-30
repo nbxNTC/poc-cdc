@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 3
   m_EditorClassIdentifier: 
   text: 'TsukI: Vou voltar para casa e falar com meus pais.'
-  goToNextMap: 0
+  hasNextPosition: 0
   nextXPosition: 0
   nextYPosition: 0
   nextMaxPosition: {x: 0, y: 0}

@@ -52,9 +52,6 @@ public class DialogSystem : MonoBehaviour
                 cameraMovement.maxPosition = current.nextMaxPosition;
                 cameraMovement.minPosition = current.nextMinPosition;
 
-                Debug.Log(current.nextXPosition);
-                Debug.Log(current.nextYPosition);
-
                 player.transform.position = new Vector2(current.nextXPosition, current.nextYPosition);
 
                 StartCoroutine(DisableLoading());

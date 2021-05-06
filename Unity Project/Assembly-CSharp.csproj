@@ -61,6 +61,8 @@
      <Compile Include="Assets\_Scripts\CameraMovement.cs" />
      <Compile Include="Assets\_Scripts\DialogModel.cs" />
      <Compile Include="Assets\_Scripts\DialogSystem.cs" />
+     <Compile Include="Assets\_Scripts\Dialogue\Dialogue.cs" />
+     <Compile Include="Assets\_Scripts\Dialogue\DialogueSystem.cs" />
      <Compile Include="Assets\_Scripts\MainMenu.cs" />
      <Compile Include="Assets\_Scripts\Models\Entity.cs" />
      <Compile Include="Assets\_Scripts\Monster.cs" />

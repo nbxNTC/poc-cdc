@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ef7f7dfb088c294e8e2f385858ef7a8, type: 3}
   m_Name: 3
   m_EditorClassIdentifier: 
-  text: "Tsuki: Eles eram t\xE3o fortes assim?"
+  text: "M\xE3e: Agora n\xE3o vamos mais conseguir nos manter no pr\xF3ximo m\xEAs."
   hasNextPosition: 0
-  nextXPosition: -1.66
-  nextYPosition: 2
-  nextMaxPosition: {x: 15.6, y: 16.23}
-  nextMinPosition: {x: -15.6, y: -16.23}
-  next: {fileID: 11400000, guid: 47472c5eecf517e4fa2ef7640c2c0f79, type: 2}
-  back: {fileID: 11400000, guid: 1eedf82e824e37541893a0c174bcc74e, type: 2}
+  nextXPosition: 0
+  nextYPosition: 0
+  nextMaxPosition: {x: 0, y: 0}
+  nextMinPosition: {x: 0, y: 0}
+  next: {fileID: 11400000, guid: 5f9155b9875f9e04c8464685f9188c2f, type: 2}
+  back: {fileID: 11400000, guid: c627ef4ef8fe79649a908752111c9028, type: 2}

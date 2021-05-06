@@ -45,6 +45,9 @@ public class DialogueSystem : MonoBehaviour
         if (current.dialogueIndex < current.dialogues.Count - 1) {
             current.dialogueIndex += 1;
         } else {
+            if (current.willEnableObject) current.objectToDisable.SetActive(true);
+            if (current.willDisableObject) current.objectToDisable.SetActive(false);
+
             if (current.hasNextPosition) {
                 loadingUI.SetActive(true);
 

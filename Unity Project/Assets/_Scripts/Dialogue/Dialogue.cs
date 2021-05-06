@@ -34,9 +34,6 @@ public class Dialogue : MonoBehaviour
         if (other.gameObject.tag == "Player") {
             Player player = other.GetComponent<Player>();
 
-            if (willEnableObject) objectToDisable.SetActive(true);
-            if (willDisableObject) objectToDisable.SetActive(false);
-
             if (this.id == -1) {
                 dialogueSystem.StartDialog(dialogue, player);
                 dialogueObject.SetActive(false);

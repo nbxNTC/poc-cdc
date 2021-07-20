@@ -4,6 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueSystem : MonoBehaviour
 {   
@@ -47,6 +48,15 @@ public class DialogueSystem : MonoBehaviour
         } else {
             if (current.willEnableObject) current.objectToDisable.SetActive(true);
             if (current.willDisableObject) current.objectToDisable.SetActive(false);
+
+            if (current.hasNextScene) {
+                loadingUI.SetActive(true);
+
+                player.SavePlayer();
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+                StartCoroutine(DisableLoading());
+            }
 
             if (current.hasNextPosition) {
                 loadingUI.SetActive(true);

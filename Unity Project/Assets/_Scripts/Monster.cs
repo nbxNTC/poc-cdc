@@ -15,16 +15,12 @@ public class Monster : MonoBehaviour
 
     void Start () {
         entity.currentHealth = entity.maxHealth;
-        entity.currentMana = entity.maxMana;
 
-        entity.resistence = 15;
         entity.damage = 30;
     }
 
     public bool TakeDamage(int damage) {
-        int updatedDamage = damage - entity.resistence;
-
-        if (updatedDamage > 0) entity.currentHealth -= updatedDamage;
+        entity.currentHealth -= damage;
 
         if (entity.currentHealth <= 0) return true;
         else return false;

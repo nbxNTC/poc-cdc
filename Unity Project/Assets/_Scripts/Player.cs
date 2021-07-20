@@ -4,30 +4,37 @@ using UnityEngine;
 
 public class Player : MonoBehaviour 
 {
-    [Header("Controller")]
+    [Header("Entity")]
     public Entity entity;
+
+    [Header("Controller")]
     public bool canMove = true;
     public int currentDialogId = 1;
 
-    [Header("Exp")]
+    [Header("Level")]
     public int currentExp = 0;
     public int expLeft = 50;
     public GameObject levelUpFX;
     public AudioClip levelUpSound;
     
-    void Start() {
-        entity.currentHealth = entity.maxHealth;
-        entity.currentMana = entity.maxMana;
+    void Start() {}
 
-        entity.resistence = 1;
-        entity.damage = 50;    
-        entity.speed = 2.5f;
+    public void SavePlayer () {
+        SaveSystem.SavePlayer(this);
+    }
+
+    public void LoadPlayer () {
+        PlayerData data = SaveSystem.LoadPlayer();
+
+        entity.level = data.level;
+        entity.currentHealth = data.health;
+
+        Debug.Log(data.level);
+        Debug.Log(data.health);
     }
 
     public bool TakeDamage(int damage) {
-        int updatedDamage = damage - entity.resistence;
-
-        if (updatedDamage > 0) entity.currentHealth -= updatedDamage;
+        entity.currentHealth -= damage;
 
         if (entity.currentHealth <= 0) return true;
         else return false;
@@ -52,7 +59,6 @@ public class Player : MonoBehaviour
             entity.level++;
 
             entity.damage += 7;
-            entity.resistence += 5;
         }
         entity.currentHealth = entity.maxHealth;
 

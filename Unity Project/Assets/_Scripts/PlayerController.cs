@@ -13,17 +13,41 @@ public class PlayerController : MonoBehaviour
     private Animator _animator;
 
     [Header("Rigidbody")]
-    private Rigidbody2D _myRigidbody;   
-    private Vector2 _movementInput = Vector2.zero;    
-        
+    private Rigidbody2D _myRigidbody;
+    private Vector2 _movementInput = Vector2.zero;
+
     private void Start() {
         _animator = GetComponent<Animator>();
         _myRigidbody = GetComponent<Rigidbody2D>();
         player = GetComponent<Player>();
+
+        player.LoadPlayer();
     }
 
     private void Update() {
         Movement();
+
+        if (Input.GetMouseButtonDown(0)) {
+            player.SavePlayer();
+
+            // int index = 1;
+            // List<GameObject> list = new List<GameObject>();
+            // GameObject test;
+            // do {
+            //     test = GameObject.Find("Dialogue_0" + index);
+            //     Debug.Log("Dialogue_0" + index);
+            //     if (test != null) {
+            //         list.Add(test);
+            //     }
+            //     index += 1;
+            // } while (test != null);
+
+            // Debug.Log(list.Count);
+        }
+
+        if (Input.GetMouseButtonDown(1)) {
+            player.LoadPlayer();
+        }
     }
         
     private void Movement() {

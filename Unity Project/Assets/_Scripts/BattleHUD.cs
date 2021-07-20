@@ -10,7 +10,7 @@ public class BattleHUD : MonoBehaviour
     public Slider hpSlider;
 
     public void SetHUD(Entity entity) {
-        nameText.text = entity.name;
+        nameText.text = "Tsuki";
         levelText.text = "Lvl" + entity.level.ToString();
         hpSlider.maxValue = entity.maxHealth;
         hpSlider.value = entity.currentHealth;

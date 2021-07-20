@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST}
+public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST }
 
 public class BattleSystem : MonoBehaviour
 {   
@@ -41,7 +41,7 @@ public class BattleSystem : MonoBehaviour
     IEnumerator SetupBattle() {
         battleUI.SetActive(true);    
 
-        dialogueText.text = "Um " + monster.entity.name + " apareceu...";
+        dialogueText.text = "Um inimigo apareceu...";
 
         playerHUD.SetHUD(player.entity);
         enemyHUD.SetHUD(monster.entity);
@@ -82,7 +82,7 @@ public class BattleSystem : MonoBehaviour
     }
 
     IEnumerator EnemyTurn() {
-        dialogueText.text = monster.entity.name + " atacou!";
+        dialogueText.text = "O inimigo atacou!";
 
         attackButton.SetActive(false);
         healButton.SetActive(false);
@@ -106,7 +106,7 @@ public class BattleSystem : MonoBehaviour
     void EndBattle() {
         if (state == BattleState.WON) {
             dialogueText.text = "Você venceu a batalha!";
-            
+
             player.GainExp(monster.expFeed);
 
             player.canMove = true;
@@ -119,7 +119,7 @@ public class BattleSystem : MonoBehaviour
 
     void PlayerTurn() {
         dialogueText.text = "Escolha uma ação...";
-        
+
         attackButton.SetActive(true);
         healButton.SetActive(true);
     }

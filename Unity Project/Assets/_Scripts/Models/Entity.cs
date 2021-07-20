@@ -5,23 +5,15 @@ using System;
 
 [Serializable]
 public class Entity {
-    
-    [Header("Name")]
-    public string name;
 
     [Header("Health")]
-    public int currentHealth;
-    public int maxHealth;
-    
-    [Header("Mana")]
-    public int currentMana;
-    public int maxMana;
+    public int currentHealth = 100;
+    public int maxHealth = 100;
 
     [Header("Stats")]
     public int level = 0;
-    public int resistence;
-    public int damage;
-    public float speed;
+    public int damage = 100;
+    public float speed = 2.5f;
 
     [Header("Component")]
     public AudioSource entityAudio;

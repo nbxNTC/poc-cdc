@@ -16,7 +16,10 @@ public class Player : MonoBehaviour
     public int expLeft = 50;
     public GameObject levelUpFX;
     public AudioClip levelUpSound;
-    
+
+    [Header("Choices")]
+    public bool firstChoice;
+
     void Start() {}
 
     public void SavePlayer () {

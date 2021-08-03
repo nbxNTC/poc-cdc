@@ -10,7 +10,10 @@ public class DialogueSystem : MonoBehaviour
 {   
     [Header("Dialogue UI")]
     public GameObject dialogueUI;
+    public GameObject choiceUI;
     public Text dialogueText;
+    public Text firstChoiceText;
+    public Text secondChoiceText;
     public GameObject loadingUI;
 
     [Header("Dialogue Buttons")]
@@ -23,9 +26,16 @@ public class DialogueSystem : MonoBehaviour
 
     void Update() {
         if (current != null) {
-            dialogueText.text = current.dialogues[current.dialogueIndex];
+            if (current.choiceId == 0) {
+                dialogueText.text = current.dialogues[current.dialogueIndex];
+            } else {
+                firstChoiceText.text = current.firstOption;
+                secondChoiceText.text = current.secondOption;
+            }
         } else {
             dialogueText.text = "";
+            firstChoiceText.text = "";
+            secondChoiceText.text = "";
         }
     }
 
@@ -33,12 +43,40 @@ public class DialogueSystem : MonoBehaviour
         this.player = player;
         this.player.canMove = false;
 
-        dialogueUI.SetActive(true);
+        if (dialogue.choiceId == 0) dialogueUI.SetActive(true);
+        if (dialogue.choiceId != 0) choiceUI.SetActive(true);
+
         current = dialogue;
     }
 
     public void ExitDialog() {
-        dialogueUI.SetActive(false);
+        if (current.willEnableObject) current.objectToEnable.SetActive(true);
+        if (current.willDisableObject) current.objectToDisable.SetActive(false);
+
+        if (current.hasNextScene) {
+            loadingUI.SetActive(true);
+
+            player.SavePlayer();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+            StartCoroutine(DisableLoading());
+        }
+
+        if (current.hasNextPosition) {
+            loadingUI.SetActive(true);
+
+            if (current.hasNextCameraPositions) {
+                cameraMovement.maxPosition = current.nextMaxPosition;
+                cameraMovement.minPosition = current.nextMinPosition;
+            }
+
+            player.transform.position = new Vector2(current.nextXPosition, current.nextYPosition);
+            StartCoroutine(DisableLoading());
+        }
+
+        if (current.choiceId == 0) dialogueUI.SetActive(false);
+        else choiceUI.SetActive(false);
+
         player.canMove = true;
     }
 
@@ -46,32 +84,18 @@ public class DialogueSystem : MonoBehaviour
         if (current.dialogueIndex < current.dialogues.Count - 1) {
             current.dialogueIndex += 1;
         } else {
-            if (current.willEnableObject) current.objectToDisable.SetActive(true);
-            if (current.willDisableObject) current.objectToDisable.SetActive(false);
-
-            if (current.hasNextScene) {
-                loadingUI.SetActive(true);
-
-                player.SavePlayer();
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-
-                StartCoroutine(DisableLoading());
-            }
-
-            if (current.hasNextPosition) {
-                loadingUI.SetActive(true);
-
-                if (current.hasNextCameraPositions) {
-                    cameraMovement.maxPosition = current.nextMaxPosition;
-                    cameraMovement.minPosition = current.nextMinPosition;
-                }
-
-                player.transform.position = new Vector2(current.nextXPosition, current.nextYPosition);
-                StartCoroutine(DisableLoading());
-            }
-
             ExitDialog();
         }
+    }
+
+    public void chooseFirst() {
+        if (current.choiceId == 1) player.firstChoice = false; // Save all friends
+        ExitDialog();
+    }
+
+    public void chooseSecond() {
+        if (current.choiceId == 1) player.firstChoice = true; // Let them be beaten
+        ExitDialog();
     }
 
     IEnumerator DisableLoading () {

@@ -14,6 +14,11 @@ public class Dialogue : MonoBehaviour
     public int dialogueIndex = 0;
     public List<string> dialogues;
 
+    [Header("Dialogue Choice")]
+    public int choiceId;
+    public string firstOption;
+    public string secondOption;
+
     [Header("Dialogue Enable/Disable Object")]
     public bool willEnableObject = false;
     public GameObject objectToEnable;
@@ -43,7 +48,8 @@ public class Dialogue : MonoBehaviour
             }
 
             if (this.id == player.currentDialogId) {
-                player.currentDialogId += 1;
+                if (this.choiceId == 0) player.currentDialogId += 1;
+                else player.currentDialogId += 2;
                 dialogueSystem.StartDialog(dialogue, player);
                 dialogueObject.SetActive(false);
             }

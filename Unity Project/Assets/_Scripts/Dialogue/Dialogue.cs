@@ -19,6 +19,13 @@ public class Dialogue : MonoBehaviour
     public string firstOption;
     public string secondOption;
 
+    [Header("Cutscene")]
+    public string cutsceneText;
+
+    [Header("Cutscene Image")]
+    public Sprite imageSprite;
+    public string imageText;
+
     [Header("Dialogue Enable/Disable Object")]
     public bool willEnableObject = false;
     public GameObject objectToEnable;

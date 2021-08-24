@@ -892,11 +892,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 248630280}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.1414311}
+  m_LocalPosition: {x: 5.37, y: -12.58, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 438935439}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &249855339
 GameObject:
@@ -1240,38 +1240,6 @@ Transform:
   - {fileID: 1312215738}
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &438935438
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 438935439}
-  m_Layer: 0
-  m_Name: Main
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &438935439
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 438935438}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.31, y: -4.67, z: -3.141431}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 248630284}
-  - {fileID: 1333312215}
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &466366410
 GameObject:
@@ -2201,7 +2169,7 @@ PrefabInstance:
     - target: {fileID: 558583760516239900, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: m_Name
-      value: 08 - Dialogue
+      value: Dialogue - Opcao 02
       objectReference: {fileID: 0}
     - target: {fileID: 558583760516239903, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
@@ -2336,8 +2304,8 @@ PrefabInstance:
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: dialogues.Array.data[4]
-      value: "Symon: Amanh\xE3 a gente conversa sobre isso, e al\xE9m do mais, eu
-        vou te levar a um lugar novo e vou te apresentar algumas pessoas."
+      value: "vo e vou te apresentar algumas pessoas.so, e al\xE9m do mais, eu vou
+        te levar a um lugar novo e vou te apresentar algumas pessoas."
       objectReference: {fileID: 0}
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
@@ -3772,7 +3740,7 @@ PrefabInstance:
     - target: {fileID: 558583760516239900, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: m_Name
-      value: 07 - Dialogue
+      value: Dialogue - Opcao 01
       objectReference: {fileID: 0}
     - target: {fileID: 558583760516239903, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
@@ -5943,12 +5911,12 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 438935439}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7397471929255849684, guid: b345fdab940dcf948b6823c929c02cca,
         type: 3}
       propertyPath: currentDialogId
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7397471929255849686, guid: b345fdab940dcf948b6823c929c02cca,
         type: 3}
@@ -5958,22 +5926,22 @@ PrefabInstance:
     - target: {fileID: 7397471929255849688, guid: b345fdab940dcf948b6823c929c02cca,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7397471929255849688, guid: b345fdab940dcf948b6823c929c02cca,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 5.37
       objectReference: {fileID: 0}
     - target: {fileID: 7397471929255849688, guid: b345fdab940dcf948b6823c929c02cca,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -12.58
       objectReference: {fileID: 0}
     - target: {fileID: 7397471929255849688, guid: b345fdab940dcf948b6823c929c02cca,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.141431
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7397471929255849688, guid: b345fdab940dcf948b6823c929c02cca,
         type: 3}
@@ -8547,10 +8515,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueUI: {fileID: 629147389}
   choiceUI: {fileID: 340935292}
+  cutsceneUI: {fileID: 0}
+  loadingUI: {fileID: 170998412}
   dialogueText: {fileID: 484837209}
   firstChoiceText: {fileID: 167223533}
   secondChoiceText: {fileID: 1321478844}
-  loadingUI: {fileID: 170998412}
+  cutsceneText: {fileID: 0}
   next: {fileID: 1518884382}
   current: {fileID: 0}
   cameraMovement: {fileID: 248630281}

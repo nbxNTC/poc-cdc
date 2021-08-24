@@ -11,10 +11,15 @@ public class DialogueSystem : MonoBehaviour
     [Header("Dialogue UI")]
     public GameObject dialogueUI;
     public GameObject choiceUI;
+    public GameObject cutsceneUI;
+    public GameObject imageUI;
+    public GameObject loadingUI;
     public Text dialogueText;
     public Text firstChoiceText;
     public Text secondChoiceText;
-    public GameObject loadingUI;
+    public Text cutsceneText;
+    public Image imageCutscene;
+    public Text imageText;
 
     [Header("Dialogue Buttons")]
     public GameObject next;
@@ -26,11 +31,16 @@ public class DialogueSystem : MonoBehaviour
 
     void Update() {
         if (current != null) {
-            if (current.choiceId == 0) {
-                dialogueText.text = current.dialogues[current.dialogueIndex];
-            } else {
+            if (current.choiceId != 0) {
                 firstChoiceText.text = current.firstOption;
                 secondChoiceText.text = current.secondOption;
+            } else if (current.cutsceneText != "") {
+                cutsceneText.text = current.cutsceneText;
+            } else if (current.imageSprite != null) {
+                imageCutscene.sprite = current.imageSprite;
+                imageText.text = current.imageText;
+            } else if (current.choiceId == 0) {
+                dialogueText.text = current.dialogues[current.dialogueIndex];
             }
         } else {
             dialogueText.text = "";
@@ -43,8 +53,10 @@ public class DialogueSystem : MonoBehaviour
         this.player = player;
         this.player.canMove = false;
 
-        if (dialogue.choiceId == 0) dialogueUI.SetActive(true);
         if (dialogue.choiceId != 0) choiceUI.SetActive(true);
+        else if (dialogue.cutsceneText != "") cutsceneUI.SetActive(true);
+        else if (dialogue.imageSprite != null) imageUI.SetActive(true);
+        else if (dialogue.choiceId == 0) dialogueUI.SetActive(true);
 
         current = dialogue;
     }
@@ -74,8 +86,10 @@ public class DialogueSystem : MonoBehaviour
             StartCoroutine(DisableLoading());
         }
 
-        if (current.choiceId == 0) dialogueUI.SetActive(false);
-        else choiceUI.SetActive(false);
+        dialogueUI.SetActive(false);
+        choiceUI.SetActive(false);
+        cutsceneUI.SetActive(false);
+        imageUI.SetActive(false);
 
         player.canMove = true;
     }
@@ -104,4 +118,3 @@ public class DialogueSystem : MonoBehaviour
         loadingUI.SetActive(false);
     }
 }
-

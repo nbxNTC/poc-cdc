@@ -38,6 +38,7 @@ public class DialogueSystem : MonoBehaviour
                 cutsceneText.text = current.cutsceneText;
             } else if (current.imageSprite != null) {
                 imageCutscene.sprite = current.imageSprite;
+                imageCutscene.preserveAspect = true;
                 imageText.text = current.imageText;
             } else if (current.choiceId == 0) {
                 dialogueText.text = current.dialogues[current.dialogueIndex];

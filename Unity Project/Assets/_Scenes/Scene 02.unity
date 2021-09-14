@@ -8516,11 +8516,14 @@ MonoBehaviour:
   dialogueUI: {fileID: 629147389}
   choiceUI: {fileID: 340935292}
   cutsceneUI: {fileID: 0}
+  imageUI: {fileID: 0}
   loadingUI: {fileID: 170998412}
   dialogueText: {fileID: 484837209}
   firstChoiceText: {fileID: 167223533}
   secondChoiceText: {fileID: 1321478844}
   cutsceneText: {fileID: 0}
+  imageCutscene: {fileID: 0}
+  imageText: {fileID: 0}
   next: {fileID: 1518884382}
   current: {fileID: 0}
   cameraMovement: {fileID: 248630281}

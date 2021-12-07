@@ -49,11 +49,11 @@ public class PlayerController : MonoBehaviour
             player.LoadPlayer();
         }
     }
-        
+
     private void Movement() {
         _movementInput.x = Input.GetAxisRaw("Horizontal");
         _movementInput.y = Input.GetAxisRaw("Vertical");
-        
+
         if (_movementInput != Vector2.zero && player.canMove) {
             _myRigidbody.MovePosition(transform.position += (Vector3)_movementInput * player.entity.speed * Time.deltaTime);
 

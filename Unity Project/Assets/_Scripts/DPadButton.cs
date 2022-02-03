@@ -4,13 +4,15 @@ using UnityEngine.EventSystems;
 
 public class DPadButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
-    public bool buttonPressed;
+  public bool buttonPressed;
 
-    public void OnPointerDown(PointerEventData eventData){
-        buttonPressed = true;
-    }
+  public void OnPointerDown(PointerEventData eventData)
+  {
+    buttonPressed = true;
+  }
 
-    public void OnPointerUp(PointerEventData eventData){
-        buttonPressed = false;
-    }
+  public void OnPointerUp(PointerEventData eventData)
+  {
+    buttonPressed = false;
+  }
 }

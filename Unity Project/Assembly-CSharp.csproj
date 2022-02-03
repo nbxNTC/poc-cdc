@@ -50,7 +50,6 @@
      <Compile Include="Assets\_Scripts\BattleHUD.cs" />
      <Compile Include="Assets\_Scripts\BattleSystem.cs" />
      <Compile Include="Assets\_Scripts\Monster.cs" />
-     <Compile Include="Assets\_Scripts\SettingsMenu.cs" />
      <Compile Include="Assets\_Scripts\PlayerController.cs" />
      <Compile Include="Assets\_Scripts\Models\Entity.cs" />
      <Compile Include="Assets\_Scripts\Saves\PlayerData.cs" />
@@ -58,6 +57,7 @@
      <Compile Include="Assets\_Scripts\Dialogue\DialogueSystem.cs" />
      <Compile Include="Assets\_Scripts\Player.cs" />
      <Compile Include="Assets\_Scripts\Dialogue\Dialogue.cs" />
+     <Compile Include="Assets\_Scripts\DPadButton.cs" />
      <Compile Include="Assets\_Scripts\PauseMenu.cs" />
      <Compile Include="Assets\_Scripts\MainMenu.cs" />
      <Compile Include="Assets\_Scripts\Saves\SaveSystem.cs" />

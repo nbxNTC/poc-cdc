@@ -2089,7 +2089,7 @@ PrefabInstance:
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: hasNextScene
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
@@ -2119,7 +2119,7 @@ PrefabInstance:
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: dialogues.Array.size
-      value: 3
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
@@ -2139,23 +2139,50 @@ PrefabInstance:
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: dialogues.Array.data[2]
-      value: "Symon: Ent\xE3o voc\xEA est\xE1 livre para treinar neste campo sempre
-        que voc\xEA precisar. "
+      value: "Symon: Ent\xE3o voc\xEA est\xE1 livre para treinar aqui sempre que
+        voc\xEA quiser. "
       objectReference: {fileID: 0}
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: dialogues.Array.data[3]
-      value: 'Tsuki: Recruta? Recruta de que?'
+      value: "Tsuki: Muito obrigado, eu n\xE3o sei como agradecer."
       objectReference: {fileID: 0}
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: dialogues.Array.data[4]
-      value: "Symon: Ent\xE3o, como eu disse, a gente tem um longo papo pela frente."
+      value: "Symon: Agrade\xE7a treinando. Enfim, eu tenho que ir a outro lugar,
+        nos vemos mais tarde."
       objectReference: {fileID: 0}
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: dialogues.Array.data[5]
-      value: "Pessoa desconhecida: Tenha um bom dia tamb\xE9m."
+      value: "Symon: Antes de ir, voc\xEA lembra daquele museu que eu te falei aquele
+        dia?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
+        type: 3}
+      propertyPath: dialogues.Array.data[6]
+      value: "Symon: Ele ir\xE1 abrir hoje, recomendo muito que v\xE1 visit\xE1-lo."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
+        type: 3}
+      propertyPath: dialogues.Array.data[7]
+      value: "Symon: H\xE1 diversas coisas interessantes l\xE1."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
+        type: 3}
+      propertyPath: dialogues.Array.data[8]
+      value: 'Tsuki: Lembro sim. Eu vou!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
+        type: 3}
+      propertyPath: dialogues.Array.data[9]
+      value: "Symon: Ent\xE3o tudo bem, at\xE9 mais."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
+        type: 3}
+      propertyPath: dialogues.Array.data[10]
+      value: "Tsuki: At\xE9."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d984beb9580bec439afbf26fd33a63b, type: 3}

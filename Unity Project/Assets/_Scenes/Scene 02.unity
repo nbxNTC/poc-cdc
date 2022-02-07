@@ -946,7 +946,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &249855339
 GameObject:
@@ -2331,17 +2331,17 @@ PrefabInstance:
     - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.451
+      value: 18.01
       objectReference: {fileID: 0}
     - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.148
+      value: -6.06
       objectReference: {fileID: 0}
     - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
@@ -2386,7 +2386,7 @@ PrefabInstance:
     - target: {fileID: 558583760516239900, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: m_Name
-      value: Dialogue - Opcao 02
+      value: 06 - Dialogue
       objectReference: {fileID: 0}
     - target: {fileID: 558583760516239903, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
@@ -2406,7 +2406,7 @@ PrefabInstance:
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: id
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
@@ -2496,14 +2496,13 @@ PrefabInstance:
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: dialogues.Array.data[0]
-      value: "Symon: Esses caras s\xE3o uns covardes. Principalmente por dar essa
-        escolha rid\xEDcula para voc\xEA."
+      value: "Symon: Esses caras s\xE3o uns covardes."
       objectReference: {fileID: 0}
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: dialogues.Array.data[1]
-      value: 'Tsuki: Me desculpe, eu devia ter me disposto para apanhar no lugar
-        dele.'
+      value: "Tsuki: Me desculpe, eu devia ter me disposto para apanhar no lugar
+        de voc\xEAs."
       objectReference: {fileID: 0}
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
@@ -2515,14 +2514,13 @@ PrefabInstance:
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: dialogues.Array.data[3]
-      value: "Tsuki: S\xE9rio? Quais outras coisas podem ser piores do que bater
-        em um homem indefeso at\xE9 desmaiar?"
+      value: "Tsuki: S\xE9rio? Quais outras coisas podem ser piores do que isso?"
       objectReference: {fileID: 0}
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: dialogues.Array.data[4]
-      value: "vo e vou te apresentar algumas pessoas.so, e al\xE9m do mais, eu vou
-        te levar a um lugar novo e vou te apresentar algumas pessoas."
+      value: 'Symon: Eu vou te apresentar algumas pessoas e te levar a um lugar novo
+        e vou te apresentar algumas pessoas.'
       objectReference: {fileID: 0}
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
@@ -3731,12 +3729,12 @@ PrefabInstance:
     - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.476
+      value: 18.866
       objectReference: {fileID: 0}
     - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.186
+      value: -2.822
       objectReference: {fileID: 0}
     - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
@@ -4386,232 +4384,6 @@ Transform:
   m_Father: {fileID: 1759899218}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &901639288
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 18.451
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -5.148
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239900, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_Name
-      value: Dialogue - Opcao 01
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239903, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_Radius
-      value: 0.20415065
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239903, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: 0.03454404
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239903, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: id
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: choiceId
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: firstOption
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: hasNextScene
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: secondOption
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: dialogueIndex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: nextXPosition
-      value: 18.024
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: nextYPosition
-      value: -4.456
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: dialogueSystem
-      value: 
-      objectReference: {fileID: 1938199353}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: hasNextPosition
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: objectToDisable
-      value: 
-      objectReference: {fileID: 898344670}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: nextMaxPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: nextMaxPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: nextMinPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: nextMinPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: willDisableObject
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: dialogues.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: hasNextCameraPositions
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: dialogues.Array.data[0]
-      value: "Symon: Voc\xEA est\xE1 bem?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: dialogues.Array.data[1]
-      value: 'Tsuki: Estou acabado, mas estou vivo pelo menos.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: dialogues.Array.data[2]
-      value: "Symon: Voc\xEA foi muito corajoso por ter aguentado a porrada para
-        salvar a gente."
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: dialogues.Array.data[3]
-      value: "Symon: Por causa disso, eu percebi que voc\xEA \xE9 uma pessoa confi\xE1vel,
-        e hoje eu vou te mostrar algumas coisas."
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: dialogues.Array.data[4]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: dialogues.Array.data[5]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: dialogues.Array.data[6]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: dialogues.Array.data[7]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: dialogues.Array.data[8]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: dialogues.Array.data[9]
-      value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7d984beb9580bec439afbf26fd33a63b, type: 3}
 --- !u!1 &917582686
 GameObject:
   m_ObjectHideFlags: 0
@@ -5097,232 +4869,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &950212593
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 18.024
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -4.456
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239900, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_Name
-      value: 06 - Dialogue
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239903, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_Radius
-      value: 0.3449352
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239903, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: 0.03454404
-      objectReference: {fileID: 0}
-    - target: {fileID: 558583760516239903, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: id
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: choiceId
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: firstOption
-      value: 'Escolha 1: Apanhar por eles.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: hasNextScene
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: secondOption
-      value: 'Escolha 2: Deixar eles apanharem.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: dialogueIndex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: nextXPosition
-      value: 18.024
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: nextYPosition
-      value: -4.456
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: dialogueSystem
-      value: 
-      objectReference: {fileID: 1938199353}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: hasNextPosition
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: objectToDisable
-      value: 
-      objectReference: {fileID: 898344670}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: nextMaxPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: nextMaxPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: nextMinPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: nextMinPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: willDisableObject
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: dialogues.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: hasNextCameraPositions
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: dialogues.Array.data[0]
-      value: "Homem desconhecido: Muito engra\xE7ado agora n\xE9?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: dialogues.Array.data[1]
-      value: 'Homem desconhecido: E para fechar com chave de ouro, vou te dar duas
-        escolhas.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: dialogues.Array.data[2]
-      value: "Homem desconhecido: Ou a gente vai bater em voc\xEA at\xE9 ficar inconsciente..."
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: dialogues.Array.data[3]
-      value: 'Homem desconhecido: ...ou a gente vai bater em algum amigo seu.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: dialogues.Array.data[4]
-      value: "Tsuki: Voc\xEA est\xE1 louco? Pare com isto."
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: dialogues.Array.data[5]
-      value: "Homem desconhecido: Eu j\xE1 te dei as op\xE7\xF5es, agora cabe a voc\xEA
-        escolher."
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: dialogues.Array.data[6]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: dialogues.Array.data[7]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: dialogues.Array.data[8]
-      value: 'Tsuki: '
-      objectReference: {fileID: 0}
-    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
-        type: 3}
-      propertyPath: dialogues.Array.data[9]
-      value: 'Homem desconhecido:'
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7d984beb9580bec439afbf26fd33a63b, type: 3}
 --- !u!1 &964301566
 GameObject:
   m_ObjectHideFlags: 0
@@ -6756,7 +6302,7 @@ PrefabInstance:
     - target: {fileID: 7397471929255849688, guid: b345fdab940dcf948b6823c929c02cca,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7397471929255849688, guid: b345fdab940dcf948b6823c929c02cca,
         type: 3}
@@ -6831,12 +6377,12 @@ PrefabInstance:
     - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.024
+      value: 17.94
       objectReference: {fileID: 0}
     - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.456
+      value: -4.48
       objectReference: {fileID: 0}
     - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
@@ -6916,12 +6462,12 @@ PrefabInstance:
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: nextXPosition
-      value: 0
+      value: 18.01
       objectReference: {fileID: 0}
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: nextYPosition
-      value: 0
+      value: -6.06
       objectReference: {fileID: 0}
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
@@ -6931,8 +6477,13 @@ PrefabInstance:
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: hasNextPosition
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
+        type: 3}
+      propertyPath: objectToDisable
+      value: 
+      objectReference: {fileID: 898344670}
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: nextMaxPosition.x
@@ -6955,6 +6506,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
+      propertyPath: willDisableObject
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
+        type: 3}
       propertyPath: dialogues.Array.size
       value: 6
       objectReference: {fileID: 0}
@@ -6971,18 +6527,17 @@ PrefabInstance:
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: dialogues.Array.data[1]
-      value: 'Homem desconhecido: E para fechar com chave de ouro, vou te dar duas
-        escolhas.'
+      value: 'Homem desconhecido: Pensando melhor, vou dar uma surra nos seus amigos.'
       objectReference: {fileID: 0}
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: dialogues.Array.data[2]
-      value: "Homem desconhecido: Ou a gente vai bater em voc\xEA at\xE9 ficar inconsciente..."
+      value: "Tsuki: N\xE3o, pare com isso."
       objectReference: {fileID: 0}
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: dialogues.Array.data[3]
-      value: 'Homem desconhecido: ...ou a gente vai bater em algum amigo seu.'
+      value: "Homem desconhecido: Isso vai lhe fazer aprender com quem est\xE1 mexendo."
       objectReference: {fileID: 0}
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
@@ -6992,8 +6547,7 @@ PrefabInstance:
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: dialogues.Array.data[5]
-      value: "Homem desconhecido: Eu j\xE1 te dei as op\xE7\xF5es, agora cabe a voc\xEA
-        escolher."
+      value: "Homem desconhecido: J\xE1 est\xE1 decidido, acabem com eles."
       objectReference: {fileID: 0}
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
@@ -8448,7 +8002,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1669778319}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.062023163, y: 1.5250949, z: 0.22851562}
+  m_LocalPosition: {x: -0.506, y: 0.863, z: 0.22851562}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 511023301}
@@ -8606,12 +8160,12 @@ PrefabInstance:
     - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.846
+      value: 18.802
       objectReference: {fileID: 0}
     - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.586
+      value: -1.691
       objectReference: {fileID: 0}
     - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}

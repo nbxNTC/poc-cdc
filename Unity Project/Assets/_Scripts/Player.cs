@@ -33,9 +33,6 @@ public class Player : MonoBehaviour
 
     entity.level = data.level;
     entity.currentHealth = data.health;
-
-    Debug.Log(data.level);
-    Debug.Log(data.health);
   }
 
   public bool TakeDamage(int damage)

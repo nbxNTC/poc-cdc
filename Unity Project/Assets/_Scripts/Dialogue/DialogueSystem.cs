@@ -84,7 +84,10 @@ public class DialogueSystem : MonoBehaviour
       loadingUI.SetActive(true);
 
       player.SavePlayer();
-      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+      int nextScene = SceneManager.GetActiveScene().buildIndex + 1;
+      PlayerPrefs.SetInt("scene", nextScene);
+      SceneManager.LoadScene(nextScene);
 
       StartCoroutine(DisableLoading());
     }

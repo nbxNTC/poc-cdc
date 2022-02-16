@@ -2863,29 +2863,28 @@ PrefabInstance:
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: dialogues.Array.data[0]
-      value: "Symon: N\xF3s conseguimos derrotar os seus soldados."
+      value: "Symon: Est\xE1 acabado, voc\xEA nunca mais vai causar nenhum problema
+        nesta cidade."
       objectReference: {fileID: 0}
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: dialogues.Array.data[1]
-      value: "Symon: S\xF3 restou voc\xEA."
+      value: "Symon: Voc\xEA j\xE1 foi derrotado, apenas desista."
       objectReference: {fileID: 0}
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: dialogues.Array.data[2]
-      value: "Tsuki: Viu? Voc\xEA pode apenas se render, pois voc\xEA j\xE1 est\xE1
-        sem caminho."
+      value: 'Draken: Eu nunca desisto!'
       objectReference: {fileID: 0}
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: dialogues.Array.data[3]
-      value: "Draken: Voc\xEAs realmente acham que podem se gabar por ter derrotado
-        estes insetos?"
+      value: "Symon: N\xE3o fa\xE7a..."
       objectReference: {fileID: 0}
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: dialogues.Array.data[4]
-      value: 'Symon: Deixe comigo Tsuki.'
+      value: 'Tsuki: Symon, saia de perto...'
       objectReference: {fileID: 0}
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
@@ -3067,12 +3066,12 @@ PrefabInstance:
     - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.49
+      value: 14.96
       objectReference: {fileID: 0}
     - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.1
+      value: -9.06
       objectReference: {fileID: 0}
     - target: {fileID: 558583760516239899, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}

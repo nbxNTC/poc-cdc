@@ -6551,8 +6551,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deb9e90aade6aeb4e9f8725a200a9450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: {fileID: 649521076}
-  levelText: {fileID: 1944386022}
   hpSlider: {fileID: 1842983756}
 --- !u!224 &1679335896
 RectTransform:
@@ -6703,12 +6701,17 @@ PrefabInstance:
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
       propertyPath: cutsceneText
-      value: "Ao derrotar o grande vil\xE3o da cidade, Tsuki se torna reconhecido
-        por todos os seus aliados e acaba se tornando o novo l\xEDder do grupo que
-        seu mentor participava. E ele ir\xE1 repassar todos os conhecimentos que
-        adquiriu com Symon para os novos membros. Com isto, ele decide continuar
-        na cidade para resolver outros problemas que aparecerem, sempre perpetuando
-        a liberdade individual de cada pessoa."
+      value: "Ao derrotarem todos os inimigos do castelo, Tsuki e seus companheiros
+        se deparam com o seu maior inimigo, no qual travam uma grande batalha. Esta
+        n\xE3o era uma batalha como qualquer outra, ela trar\xE1 um peso muito grande
+        nas costas de Tsuki, e ele n\xE3o imaginava isso. Ap\xF3s lutarem por alguns
+        minutos, Draken quase derrotado utiliza uma habilidade secreta, no qual ele
+        e Symon s\xE3o engolidos por uma n\xE9voa preta e apenas o que resta no ch\xE3o
+        \xE9 sangue, muito sangue. Tsuki descobre ent\xE3o que esse fora o seu \xFAltimo
+        momento com seu mentor. Ap\xF3s algum tempo, ele se d\xE1 conta de que ter\xE1
+        que repassar todos os conhecimentos que adquiriu com Symon para os novos
+        membros. Com isto, ele decide continuar na cidade para resolver outros problemas
+        que aparecerem, sempre perpetuando a liberdade individual de cada pessoa."
       objectReference: {fileID: 0}
     - target: {fileID: 6443326655013017200, guid: 7d984beb9580bec439afbf26fd33a63b,
         type: 3}
@@ -7199,8 +7202,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deb9e90aade6aeb4e9f8725a200a9450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: {fileID: 1256721032}
-  levelText: {fileID: 1003041814}
   hpSlider: {fileID: 417796859}
 --- !u!224 &1846149119
 RectTransform:
